@@ -1,5 +1,5 @@
 var weather = [];
-axios.get('https://api.nasa.gov/insight_weather/?api_key=pPpyysVn1hfB7jv2weiezvnFEX3JArwXwms8ayoA&feedtype=json&ver=1.0')
+axios.get('https://api.nasa.gov/insight_weather/?api_key=[INSERT_API_KEY_HERE]&feedtype=json&ver=1.0')
     .then(response => {
         for (const x in response.data) {
             if (x !== "sol_keys" && x !== "validity_checks") {
