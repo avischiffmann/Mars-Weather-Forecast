@@ -1,4 +1,4 @@
-# Mars-Weather-Forecast
+# 👽Mars Weather Forecast
 
 This was a project I made to learn how to use Axios and simple APIs. I used the [NASA insight weather API](https://mars.nasa.gov/insight/weather/) to gather the temperatures, dates, and atmospheric pressure of each "Sol" for the past 7 🌍 days.
 
