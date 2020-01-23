@@ -3,4 +3,4 @@
 This was a project I made to learn how to use Axios and simple APIs. I used the [NASA insight weather API](https://mars.nasa.gov/insight/weather/) to gather the temperatures, dates, and atmospheric pressure of each "Sol" for the past 7 🌍 days.
 
 ![Figure 1]
-(https://github.com/masteravi/Mars-Weather-Forecast/blob/master/Screen%20Shot%202020-01-23%20at%202.04.44%20PM.png)
+(https://github.com/masteravi/Mars-Weather-Forecast/blob/master/Screenshots/Figure1.png)
