@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<script src="/index.js"></script>
+<style>
+    body,
+    html {
+        background-color: #BF5630;
+    }
+
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+        color: #592115
+    }
+
+    p {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 600;
+        color: black;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-family: 'Orbitron', sans-serif;
+    }
+    .circle {
+  width: 180px;
+  height: 180px;
+  background-color: #BF5630;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.circle:before {
+  content: "\A0";
+  visibility: hidden;
+}
+.row {
+    margin-bottom: 30px;
+}
+</style>
+
+<body>
+    <div class="container-fluid" style="margin-top: 5vh; background-color: #F2C6AC; border-radius: 35px; width: 90%; ">
+        <div class="row">
+            <div class="col-9" style=" border-radius: 35px; justify-content:center;">
+                <h1>Elysium Planitia</h1>
+
+                <h2 style="margin-bottom: 35px;">This week</h2>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <p id="w1"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w2"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w3"></p>
+                        </div>
+                        <div class="col">
+                            <p id="p0"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p id="w4"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w5"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w6"></p>
+                        </div>
+                        <div class="col">
+                            <p id="p1"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p id="w7"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w8"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w9"></p>
+                        </div>
+                        <div class="col">
+                            <p id="p2"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p id="w10"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w11"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w12"></p>
+                        </div>
+                        <div class="col">
+                            <p id="p3"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p id="w13"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w14"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w15"></p>
+                        </div>
+                        <div class="col">
+                            <p id="p4"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p id="w16"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w17"></p>
+                        </div>
+                        <div class="col">
+                            <p id="w18"></p>
+                        </div>
+                        <div class="col">
+                            <p id="p5"></p>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="margin-bottom: 35px;">Latest tourist pictures!</h2>
+                <div id="curator-feed-default-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+                <script type="text/javascript">
+                (function(){
+                var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+                i.src = "https://cdn.curator.io/published/f800ba95-0dee-45fd-a85c-fc611fbcc086.js";
+                e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+                })();
+                </script>         
+            </div>
+            <div class="col-3" style="background-color: #592115; border-radius: 0px 35px 35px 0px;">
+
+                <h2 style="color: #BF5630; text-align: center; padding-top: 150px; padding-bottom: 30px; font-size: 50px; color: whitesmoke; font-weight: 800;">Today</h2>
+                <div class="circle">
+                    <p style="margin-bottom: 0; color: whitesmoke; font-size: 25px;">Sol</p>
+                    <p style="color: whitesmoke; font-size: 40px;" id="w19"></p>
+                </div>
+                <p style="color: whitesmoke; text-align: center; background-color: #BF5630; border-radius: 15px; font-size: 20px; margin-top: 25px;" id="w20"></p>
+                <p style="color: whitesmoke; text-align: center; background-color: #BF5630; border-radius: 15px; font-size: 20px; margin-top: 25px;" id="w21"></p>
+                <p style="color: whitesmoke; text-align: center; background-color: #BF5630; border-radius: 15px; font-size: 20px; margin-top: 25px;" id="p6"></p>
+                <p style="color: whitesmoke; text-align: center; background-color: #BF5630; border-radius: 15px; font-size: 20px; margin-top: 25px;">Created by Avi Schiffmann</p>
+                <p style="color: whitesmoke; text-align: center; background-color: #BF5630; border-radius: 15px; font-size: 20px; margin-top: 25px;">Powered by NASA!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
